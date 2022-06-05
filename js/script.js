@@ -1,60 +1,44 @@
-// Getting initial state of our sub menu
-window.onload = (event) => {
-	// getting sub navigation css styling properties
-	const dropDownMenu = document.getElementById('sub-navigation');
-
-	// getting navigation slide css styling properties
-	const menuSlide = document.getElementById('menu-slide')
-
-	dropDownMenu.style.display = 'none';
-	menuSlide.style.display = 'none';
+// ------------------------ Responsive menu ----------------
+		window.addEventListener("load", function(){
+		  addRequiredClasses();
+		});
 
 
-	console.log('Hi there');
-};
+		function addRequiredClasses()
+		{
+		  if(window.innerWidth < 860)
+		  {
+		    document.body.classList.add('mobile');
+		  }
+		  else
+		  {
+		    document.body.classList.remove('mobile');
+		  }
+		}
 
-// Menu open
-var menuOpen = document.getElementById('open-menu');
+		let hamberger = document.querySelector('.hamberger');
+		let mobileNav = document.querySelector('.nav-list');
 
-menuOpen.onclick = function()
-{
-	var menuSlide = document.getElementById('menu-slide');
+		let bars = document.querySelectorAll('.hamberger span');
 
-	if(menuSlide.style.display == 'none')
-	{
-		menuSlide.style.display = 'block';
-	}
-}
+		let isActive = false
 
-
-// Menu close
-var menuClose = document.getElementById('close-menu');
-
-menuClose.onclick = function()
-{
-	var menuSlide = document.getElementById('menu-slide');
-
-	if(menuSlide.style.display == 'block')
-	{
-		menuSlide.style.display = 'none';
-	}
-}
-
-
-// Performing show hide dropdown menu effect
-var trigger = document.getElementById('sub-menu-trigger')
-
-trigger.onclick = function()
-{
-	var dropDownMenu = document.getElementById('sub-navigation');
-
-	if(dropDownMenu.style.display !== 'none')
-	{
-		dropDownMenu.style.display = 'none';
-	}
-	else
-	{
-		dropDownMenu.style.display = 'block';
-	}
-}
-
+		hamberger.addEventListener('click', function(){
+		  mobileNav.classList.toggle('open');
+		  
+		  if(!isActive)
+		  {
+		    bars[0].style.transform = 'rotate(45deg)';
+		    bars[1].style.opacity = '0'
+		    bars[2].style.transform = 'rotate(-45deg)';
+		    isActive = true
+		  }
+		  else
+		  {
+		    bars[0].style.transform = 'rotate(0deg)';
+		    bars[1].style.opacity = '1'
+		    bars[2].style.transform = 'rotate(0deg)';
+		    isActive = false
+		  }
+		});
+		// ------------------------ Responsive menu ----------------
