@@ -419,96 +419,6 @@ nav ul.dropdown-list
 }
 
 
-/*----------------- Nav Menu styling -----------------*/
-.nav-container > span
-{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	/*border: 1px solid red;*/
-	padding: 0.2rem 0.8rem 0.2rem 0.8rem;
-}
-
-.burger-menu
-{
-	cursor: pointer;
-}
-
-.burger-menu ion-icon
-{
-	font-size: 1.5rem;
-	padding: 0.5rem;
-	border: 1px solid var(--third-color);
-	border-radius: 0.2rem;
-}
-
-.navigation-container
-{
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: rgb(9, 13, 10, 0.3);
-	display: block;
-	width: 100%;
-	height: 100vh;
-}
-
-.navigation
-{
-	background: #fff;
-	padding: 1.2rem;
-	width: 80%;
-	height: 100vh;
-	transition: 0.5s;
-}
-
-.close-menu
-{
-	display: block;
-	text-align: right;
-	font-size: 1.6rem;
-	cursor: pointer;
-}
-
-.close-menu ion-icon
-{
-	border: 1px solid var(--third-color);
-}
-
-.navigation li
-{
-	list-style: none;
-  	transition: all 5s ease-out;
-}
-
-.navigation li a
-{
-	font-size: 1rem;
-	font-weight: 500;
-	line-height: 2.6;
-	text-decoration: none;
-	color: var(--third-color);
-}
-
-#sub-menu-trigger span
-{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-#sub-menu-trigger span ion-icon
-{
-	cursor: pointer;
-}
-
-#sub-navigation
-{
-	padding-left: 1.4rem;
-}
-
-/*----------------- Nav Menu styling -----------------*/
-
 
 /*----------------- Hero section styling ----------------*/
 .hero
@@ -522,7 +432,7 @@ nav ul.dropdown-list
 .hero .hero-container
 {	
 	width: 100%;
-	height: 100vh;
+	height: 90vh;
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-end;
