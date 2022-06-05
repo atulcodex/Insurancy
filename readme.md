@@ -31,7 +31,7 @@ Insurancy is sharp Insurance agency website template based on HTML CSS and JavaS
 
 
 
-[![Nihory - Portfolio site template live demo](https://i.ibb.co/vwN8cgW/live-demo.png)](https://https://insurancy-atulcodex.netlify.app/)
+[![Insurancy | Insurance website template live demo](https://i.ibb.co/vwN8cgW/live-demo.png)](https://https://insurancy-atulcodex.netlify.app/)
 
 
 
