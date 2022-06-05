@@ -1,0 +1,45 @@
+/*------------------------ News catalogue styling ------------------------*/
+.news-card
+{
+	margin: 4rem 0;
+}
+
+.news-card .featured-image
+{
+	border-radius: 6px;
+}
+
+.news-card > a
+{
+	text-decoration: none;
+	color: var(--third-color);
+}
+
+.news-card p a
+{
+	text-decoration: none;
+}
+/*------------------------ News catalogue styling ------------------------*/
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------*/
+/*------------------------------- Desktop screen styling --------------------------*/
+/*---------------------------------------------------------------------------------*/
+@media screen and (min-width: 789px)
+{
+	.news-catalogue
+	{
+		display: grid;
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1.5rem;
+	}
+}

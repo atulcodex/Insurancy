@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>News | Insurancy</title>
+	
+	<meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="atulcodex - Atul Prajapati | Freelance web developer">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="img/shield.png">
+
+	<!-- External CSS link -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/news-view.css">
+
+	<!-- Ionic icons CDN -->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+	<!-- Jquery CDN link -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+	<!-- Scroll to top starts -->
+	<button id="topBtn">
+	  	<ion-icon name="arrow-up-outline"></ion-icon>
+	</button>
+	<!-- Scroll to top ends -->
+
+	<!-- ------------------------------- Blog page ------------------------- -->
+	<section class="news-view">
+		<div class="container">
+			<h2 class="heading">How credit affects your Insurance</h2>
+			<p class="author">by <a href="#">atulcodex</a></p>
+
+			<img src="img/news-1.png" alt="Featured post image" title="Featured post image" class="featured-img">
+
+			<h2 class="heading">Introduction</h2>
+
+			<p class="para-line">
+				Readymade godard brooklyn, kogi shoreditch hashtag hella shaman kitsch man bun pinterest flexitarian. Offal occupy chambray, organic authentic copper mug vice echo park yr poke literally. Ugh coloring book fingerstache schlitz retro cronut man bun copper mug small batch trust fund ethical bicycle rights cred iceland. Celiac schlitz la croix 3 wolf moon butcher. Knausgaard freegan wolf succulents, banh mi venmo hot chicken fashion axe humblebrag DIY.
+			</p>
+
+			<p class="para-line">
+				Waistcoat gluten-free cronut cred quinoa. Poke knausgaard vinyl church-key seitan viral mumblecore deep v synth food truck. Ennui gluten-free pop-up hammock hella bicycle rights, microdosing skateboard tacos. Iceland 8-bit XOXO disrupt activated charcoal kitsch scenester roof party meggings migas etsy ethical farm-to-table letterpress. Banjo wayfarers chartreuse taiyaki, stumptown prism 8-bit tote bag.
+			</p>
+
+			<h2 class="heading">Story</h2>
+
+			<p class="para-line">
+				Listicle offal viral, flannel franzen roof party shoreditch meditation subway tile bicycle rights tbh fingerstache copper mug organic umami. Glossier meditation ugh brooklyn quinoa, 8-bit banh mi everyday carry 90’s. Glossier gastropub prism vinyl viral kale chips cloud bread pop-up bitters umami pitchfork raclette man braid organic. Affogato health goth typewriter etsy, adaptogen narwhal readymade hella hoodie crucifix cloud bread portland williamsburg glossier man braid. Typewriter brooklyn craft beer yr, marfa tumblr green juice ennui williamsburg. Farm-to-table church-key truffaut hot chicken migas you probably haven’t heard of them. Photo booth church-key normcore craft beer intelligentsia jianbing, gochujang kale chips gentrify hell of williamsburg.
+			</p>
+
+			<h2 class="heading">Conclusion</h2>
+
+			<p class="para-line">
+				Venmo fixie knausgaard readymade. 3 wolf moon blue bottle sartorial blog. Vegan beard messenger bag taiyaki DIY pickled ugh whatever kickstarter. Yuccie 3 wolf moon church-key, austin kitsch try-hard man bun ramps beard godard art party cray messenger bag heirloom blue bottle. Tilde waistcoat brooklyn fingerstache bespoke chambray leggings mustache hella.
+			</p>
+
+
+			<div class="lead-form">
+				<form action="">
+					<div class="field-row">
+						<div class="input-field">
+							<label for="name">Full Name</label>
+							<input type="text" id="name" placeholder="Your name" required>
+						</div>
+
+						<div class="input-field">
+							<label for="number">Phone No.</label>
+							<input type="text" id="number" placeholder="Your phone number" required>
+						</div>
+
+						<div class="input-field">
+							<label for="text">Website</label>
+							<input type="text" id="website" placeholder="Your website link" required>
+						</div>
+					</div>
+
+					<div class="input-field">
+						<label for="text">Comment*</label>
+						<textarea name="comment" id="comment" cols="30" rows="10" placeholder="message line here"></textarea>
+					</div>
+
+					<input type="checkbox" id="save-info" name="save-info">
+					<label for="save-info">
+						Save my name, email, and website in this browser for the next time I comment.
+					</label>
+
+					<br>
+					<br>
+
+					<button class="btn btn-blue">
+						<a href="#">Post Comment</a>
+					</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- ------------------------------- Blog page ------------------------- -->
+
+
+	<!--------------- Footer ------------------>
+	<footer>
+		<div class="footer-container">
+			<p class="para-line white">Copyright © 2022</p>
+		</div>
+	</footer>
+	<!--------------- Footer ------------------>
+
+	<!------------------------ Scroll to top button -------------------->
+	<script>
+		$(document).ready(function(){
+			$(window).scroll(function(){
+			if($(this).scrollTop() > 40)
+			{
+				$('#topBtn').fadeIn();
+			}
+			else
+			{
+				$('#topBtn').fadeOut();
+			}
+			});
+
+			$("#topBtn").click(function(){
+				$('html, body').animate({scrollTop: 0},800);
+			});             
+		});
+	</script>
+</body>
+</html>

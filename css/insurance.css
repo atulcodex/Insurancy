@@ -1,0 +1,221 @@
+/*------------------ Breadcrumb styling --------------------*/
+.breadcrumbs
+{
+	background: linear-gradient(rgba(150, 60, 221, 0.1), rgba(17, 17, 69, 0.8)), url('../img/services.jpg');
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.breadcrumb-container
+{
+	height: 34vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 1.5rem;
+}
+
+.breadcrumb-container .hero-heading
+{
+	font-size: 3rem;
+}
+/*------------------ Breadcrumb styling --------------------*/
+
+
+
+/*------------------ Insurance service card styling ---------------*/
+.services
+{
+	margin-top: 2.6rem;
+}
+
+.service-card
+{
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+	border: none;
+	border-radius: 10px;
+	margin: 2rem 0;
+}
+
+.service-card .service-img
+{
+	height: 180px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.service-card .card-home
+{	
+	background: url("../img/home-insurance.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.service-card .card-auto
+{	
+	background: url("../img/auto-insurance.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.service-card .card-vacation
+{	
+	background: url("../img/vacation-insurance.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.service-card .card-belonging
+{	
+	background: url("../img/belongings-insurance.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.service-card .card-childcare
+{	
+	background: url("../img/childcare-insurance.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.service-card .card-health
+{	
+	background: url("../img/health-insurance.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.service-card .service-details
+{
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1.1rem;
+}
+/*------------------ Insurance service card styling ---------------*/
+
+
+/*------------------ FAQ styling -------------------------------------*/
+.faqs
+{
+	background: linear-gradient(rgba(10, 17, 79, 0.9), rgba(10, 17, 79, 0.9)), url("../img/hero-bg.jpg");
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.faq
+{
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+.faq .question
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--fourth-color);
+  padding: 1rem;
+}
+
+.faq .question h3
+{
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.faq .answer
+{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-in-out;
+}
+
+.faq .answer p
+{
+  padding-top: 1rem;
+  line-height: 1.6;
+}
+
+.faq.active .answer
+{
+  max-height: 300px;
+}
+/*------------------ FAQ styling -------------------------------------*/
+
+
+/*------------------ Additional service styling -------------------*/
+.additional-service
+{
+	margin: 4rem 0;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.additional-service .addi-service-img
+{
+	border: none;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.additional-service .addi-ser-heading
+{
+	font-size: 1.6rem;
+	font-weight: 600;
+}
+
+.additional-service hr
+{
+	width: 60px;
+	color: var(--third-color);
+}
+/*------------------ Additional service styling -------------------*/
+
+
+
+
+
+
+
+/*---------------------------------------------------------------*/
+/*-------------------- Desktop screen styling -------------------*/
+/*---------------------------------------------------------------*/
+@media screen and (min-width: 789px)
+{
+	/*----------- Breadcrumb styling ----------*/
+	.breadcrumb-container 
+	{
+		height: 50vh;
+	}
+
+	/*----------- Service styling ------------*/
+	.service-card
+	{
+		margin: 0;
+	}
+
+	/*----------- FAQ styling --------------*/
+	.faq-row
+	{
+		align-items: flex-start;
+	}
+
+	/*------------ Additional service styling ------------*/
+	.additional-row
+	{
+		align-items: flex-start;
+	}
+}

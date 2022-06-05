@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>News | Insurancy</title>
+	
+	<meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="atulcodex - Atul Prajapati | Freelance web developer">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="img/shield.png">
+
+	<!-- External CSS link -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/news.css">
+
+	<!-- Ionic icons CDN -->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+	<!-- Jquery CDN link -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+	<!-- Scroll to top starts -->
+	<button id="topBtn">
+	  	<ion-icon name="arrow-up-outline"></ion-icon>
+	</button>
+	<!-- Scroll to top ends -->
+
+	<!-- --------------------------- News ---------------------------- -->
+	<section class="news">
+		<div class="container">
+			<h2 class="heading">News</h2>
+
+			<div class="news-catalogue">
+				<div class="news-card">
+					<a href="#">
+						<img src="img/news-1.png" alt="Post featured image" title="Post featured image" class="featured-image">
+						<h2 class="heading">How credit affects your Insurance</h2>
+					</a>
+					<p class="author">by <a href="#">atulcodex</a></p>
+					<p class="para-line">
+						Introduction Readymade godard brooklyn, kogi shoreditch hashtag hella shaman kitsch man bun pinterest flexitarian. Offal occupy chambray, organic authentic copper mug vice echo park yr… <a href="#">Read More</a>
+					</p>
+				</div>
+				<div class="news-card">
+					<a href="#">
+						<img src="img/news-2.png" alt="Post featured image" title="Post featured image" class="featured-image">
+						<h2 class="heading">Five insurance mistakes to avoid</h2>
+					</a>
+					<p class="author">by <a href="#">atulcodex</a></p>
+					<p class="para-line">
+						Introduction Readymade godard brooklyn, kogi shoreditch hashtag hella shaman kitsch man bun pinterest flexitarian. Offal occupy chambray, organic authentic copper mug vice echo park yr… <a href="#">Read More</a>
+					</p>
+				</div>
+				<div class="news-card">
+					<a href="#">
+						<img src="img/news-3.png" alt="Post featured image" title="Post featured image" class="featured-image">
+						<h2 class="heading">Top 5 Trends in the Insurance Industry</h2>
+					</a>
+					<p class="author">by <a href="#">atulcodex</a></p>
+					<p class="para-line">
+						Introduction Readymade godard brooklyn, kogi shoreditch hashtag hella shaman kitsch man bun pinterest flexitarian. Offal occupy chambray, organic authentic copper mug vice echo park yr… <a href="#">Read More</a>
+					</p>
+				</div>
+				<div class="news-card">
+					<a href="#">
+						<img src="img/news-4.png" alt="Post featured image" title="Post featured image" class="featured-image">
+						<h2 class="heading">How to choose the best Health Insurance</h2>
+					</a>
+					<p class="author">by <a href="#">atulcodex</a></p>
+					<p class="para-line">
+						Introduction Readymade godard brooklyn, kogi shoreditch hashtag hella shaman kitsch man bun pinterest flexitarian. Offal occupy chambray, organic authentic copper mug vice echo park yr… <a href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- --------------------------- News ---------------------------- -->
+
+
+
+	<!-- ---------------------------- Footer---------------------------- -->
+	<footer>
+		<div class="footer-container">
+			<p class="para-line white">Copyright © 2022</p>
+		</div>
+	</footer>
+	<!-- ---------------------------- Footer---------------------------- -->	
+
+	<!------------------------ Scroll to top button -------------------->
+	<script>
+		$(document).ready(function(){
+			$(window).scroll(function(){
+			if($(this).scrollTop() > 40)
+			{
+				$('#topBtn').fadeIn();
+			}
+			else
+			{
+				$('#topBtn').fadeOut();
+			}
+			});
+
+			$("#topBtn").click(function(){
+				$('html, body').animate({scrollTop: 0},800);
+			});             
+		});
+	</script>
+</body>
+</html>

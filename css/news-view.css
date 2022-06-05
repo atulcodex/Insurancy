@@ -1,0 +1,46 @@
+.author
+{
+	margin: 0.5rem 0;
+}
+
+.author a
+{
+	text-decoration: none;
+	color: var(--blue-color);
+}
+
+.featured-img
+{
+	border-radius: 6px;
+}
+
+.input-field textarea
+{
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+	border: none;
+	border-radius: 5px;
+	padding: 1rem;
+	background: #f3f8ff;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------------*/
+/*-------------------------------- Desktop screen styling ----------------------------------*/
+/*------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 789px)
+{
+	.container
+	{
+		max-width: 1000px;
+	}
+}

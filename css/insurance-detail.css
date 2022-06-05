@@ -1,0 +1,281 @@
+/*------------------ Breadcrumb styling --------------------*/
+.breadcrumbs
+{
+	background: linear-gradient(rgba(150, 60, 221, 0.1), rgba(17, 17, 69, 0.8)), url('../img/auto-insurance.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.breadcrumb-container
+{
+	height: 34vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 1.5rem;
+}
+
+.breadcrumb-container .hero-heading
+{
+	font-size: 3rem;
+}
+/*------------------ Breadcrumb styling --------------------*/
+
+
+/*------------------ Insurance description --------------------*/
+.insurance-features
+{
+	font-size: 0.8rem;
+	font-weight: 600;
+	line-height: 1.6;
+	margin: 1rem 1.7rem 1rem 0;
+}
+
+.insurance-features ion-icon
+{
+	color: var(--yellow-color);
+}
+
+.desc-content .para-line
+{
+	margin: 1rem 0;
+}
+
+.desc-img-content
+{
+	margin: 2rem 0;
+}
+
+.insurance-detail-img
+{
+	border: none;
+	border-radius: 6px;
+}
+/*------------------ Insurance description --------------------*/
+
+
+
+/*--------------------- Plocies description ---------------------*/
+.single-policy
+{
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin: 1.6rem 0;
+}
+
+.single-policy ion-icon
+{
+	color: var(--yellow-color);
+	font-size: 2rem;
+}
+/*--------------------- Plocies description ---------------------*/
+
+
+
+
+/*------------------------- Agent CTA ----------------------------*/
+.agent-cta
+{
+	background: linear-gradient(rgba(10, 17, 79, 0.9), rgba(10, 17, 79, 0.9)), url("../img/hero-bg.jpg");
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.agents
+{
+	margin: 1.5rem 0;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.agent .para-line
+{
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.agent hr
+{
+	color: var(--yellow-color);
+	height: 2px;
+	margin: 1rem 0;
+}
+
+.agent .agent-name, .agent .agent-email
+{
+	font-weight: 600;
+	line-height: 1;
+	display: flex;
+	align-items: center;
+	gap: 0.8rem;
+}
+/*------------------------- Agent CTA ----------------------------*/
+
+
+
+/*---------------------------- Insurance pack -------------------------*/
+.ins-pack-row
+{
+	margin: 1.6rem 0;
+}
+
+.ins-pack-name
+{
+	font-size: 1.6rem;
+	font-weight: 600;
+	line-height: 1.1;
+}
+
+.ins-pack-price
+{
+	margin-top: 1rem;
+	font-weight: 600;
+}
+
+.pack-cta
+{
+	border: none;
+	background: none;
+}
+
+.pack-cta a
+{
+	margin: 1.5rem 0;
+	color: var(--blue-color);
+	font-size: 1.1rem;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+}
+
+.insurance-packs .container hr
+{
+	color: #ffffff3d;
+	height: 1px;
+}
+/*---------------------------- Insurance pack -------------------------*/
+
+
+/*---------------------------- Quotation ------------------------------*/
+.quot-img-col
+{
+	background: url(../img/additional-service-1.png);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.spacer
+{
+	height: 500px;
+}
+/*---------------------------- Quotation ------------------------------*/
+
+
+
+
+/*---------------------------------------------------------------*/
+/*-------------------- Desktop screen styling -------------------*/
+/*---------------------------------------------------------------*/
+@media screen and (min-width: 789px)
+{
+	/*----------- Breadcrumb styling ----------*/
+	.breadcrumb-container 
+	{
+		height: 50vh;
+	}
+
+
+	/*----------- description styling --------------*/
+	.description
+	{
+		background-image: linear-gradient(
+		  155deg,
+		  hsl(215deg 100% 98%) 0%,
+		  hsl(215deg 100% 98%) 30%,
+		  hsl(215deg 100% 98%) 38%,
+		  hsl(215deg 100% 98%) 43%,
+		  hsl(215deg 100% 98%) 47%,
+		  hsl(215deg 100% 98%) 48%,
+		  hsl(215deg 100% 98%) 50%,
+		  hsl(215deg 100% 98%) 50%,
+		  hsl(215deg 100% 99%) 50%,
+		  hsl(215deg 100% 99%) 50%,
+		  hsl(215deg 100% 99%) 50%,
+		  hsl(215deg 100% 99%) 50%,
+		  hsl(215deg 100% 99%) 50%,
+		  hsl(215deg 100% 99%) 50%,
+		  hsl(215deg 100% 99%) 50%,
+		  hsl(215deg 100% 99%) 50%,
+		  hsl(215deg 100% 99%) 51%,
+		  hsl(215deg 100% 100%) 53%,
+		  hsl(215deg 100% 100%) 55%,
+		  hsl(215deg 100% 100%) 60%,
+		  hsl(215deg 100% 100%) 68%,
+		  hsl(0deg 0% 100%) 96%
+		);
+	}
+
+	.description .container .row
+	{
+		gap: 4rem;
+	}
+
+	.desc-content
+	{
+		width: 150% !important;
+	}
+
+	.insurance-features
+	{
+		font-size: 0.9rem;
+	}
+
+
+	/*---------------- policy styling --------------------*/
+	.policies
+	{
+		display: grid;
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 2rem;
+	}
+
+	.single-policy
+	{
+		flex-direction: row;
+	}
+
+
+	/*----------------- Agents styling --------------------*/
+	.agents
+	{
+		flex-direction: row;
+		gap: 4rem;
+	}
+
+
+	/*----------------- Insurance pack ------------------------*/
+	.ins-pack-row
+	{
+		align-items: flex-start;
+	}
+
+	.insurance-features
+	{
+		margin-top: 0;
+	}
+
+
+	/*----------------------- Quotation ----------------------*/
+	.quoatation
+	{
+		background: #f3f8ff;
+	}
+	/*----------------------- Quotation ----------------------*/
+}
